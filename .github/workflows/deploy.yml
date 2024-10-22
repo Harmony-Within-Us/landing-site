@@ -48,6 +48,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          cname: harmony-within.us
           publish_dir: ./content/.vitepress/dist
           publish_branch: deploy
           destination_dir: ./.
