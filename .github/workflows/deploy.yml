@@ -47,7 +47,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./content/.vitepress/dist
           publish_branch: deploy
           destination_dir: ./.
