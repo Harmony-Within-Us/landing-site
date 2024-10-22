@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev content",
+    "docs:build": "vitepress build content",
+    "docs:preview": "vitepress preview content"
+  },
+  "devDependencies": {
+    "@types/ical": "^0.8.3",
+    "@types/node": "^22.7.8",
+    "vitepress": "^1.4.1",
+    "vue": "^3.5.12"
+  },
+  "dependencies": {
+    "ical": "^0.8.0",
+    "markdown-yaml-metadata-parser": "^3.0.0"
+  }
+}
