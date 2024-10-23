@@ -49,6 +49,8 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://static.harmony-within.us/favicon/favicon-16x16.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://static.harmony-within.us/favicon/apple-touch-icon.png' }],
     ['link', { rel: 'shortcut icon', href: 'https://static.harmony-within.us/favicon/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js' }],
     ['meta', { name: 'msapplication-TileColor', content: '#f8acbc' }],
 
   ],

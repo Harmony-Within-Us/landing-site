@@ -26,22 +26,14 @@ features:
 <script setup>
 import { ref, onMounted } from 'vue'
 import { format } from 'date-fns'
-import { Splide, SplideSlide } from '@splidejs/vue-splide'
 
-const announcements = ref([
- /* {
-    title: "New Healthcare Resources Available",
-    date: "2024-05-01",
-    content: "We've updated our healthcare resources section with new information about trans-inclusive healthcare providers.",
-    image: "/images/healthcare.jpg"
-  },*/
+const announcements =
   {
     title: "Lorem Ipsum",
     date: "2024-01-01",
     content: "Lorem ipsum...",
     image: "/images"
   }
-])
 
 const posts = ref([
   {
@@ -66,18 +58,15 @@ const formatDate = (date) => format(new Date(date), 'MMMM d, yyyy')
     <h2 class="text-4xl font-bold mb-8 bg-gradient-to-r from-[#5bcefa] via-[#f5a9b8] to-white bg-clip-text text-transparent">
       Latest Announcements
     </h2>
-  <Splide :options="{ type: 'loop', perPage: 1, autoplay: true, interval: 4000, pagination: false }">
-      <SplideSlide v-for="announcement in announcements" :key="announcement.title">
         <div class="announcement-card flex flex-col md:flex-row items-center gap-8">
           <div class="md:w-1/2">
-            <h3 class="text-2xl font-semibold mb-3">{{ announcement.title }}</h3>
-            <p class="text-sm text-gray-400 mb-3">{{ formatDate(announcement.date) }}</p>
-            <p class="text-lg">{{ announcement.content }}</p>
+            <h3 class="text-2xl font-semibold mb-3">{{ announcements.title }}</h3>
+            <p class="text-sm text-gray-400 mb-3">{{ announcements.date }}</p>
+            <p class="text-lg">{{ announcements.content }}</p>
           </div>
           <div class="md:w-1/2 h-64 bg-gradient-to-br from-[#5bcefa]/20 to-[#f5a9b8]/20 rounded-xl"></div>
         </div>
-      </SplideSlide>
-    </Splide>
+
   </section>
 
   <section class="mb-12">

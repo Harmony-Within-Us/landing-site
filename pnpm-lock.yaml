@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@splidejs/vue-splide':
-        specifier: ^0.6.12
-        version: 0.6.12
       '@types/d3':
         specifier: ^7.4.3
         version: 7.4.3
@@ -38,9 +35,6 @@ importers:
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
-      sass:
-        specifier: ^1.80.3
-        version: 1.80.3
       tailwindcss:
         specifier: ^3.4.14
         version: 3.4.14
@@ -643,12 +637,6 @@ packages:
 
   '@shikijs/vscode-textmate@9.3.0':
     resolution: {integrity: sha512-jn7/7ky30idSkd/O5yDBfAnVt+JJpepofP/POZ1iMOxK59cOfqIgg/Dj0eFsjOTMw+4ycJN0uhZH/Eb0bs/EUA==}
-
-  '@splidejs/splide@4.1.4':
-    resolution: {integrity: sha512-5I30evTJcAJQXt6vJ26g2xEkG+l1nXcpEw4xpKh0/FWQ8ozmAeTbtniVtVmz2sH1Es3vgfC4SS8B2X4o5JMptA==}
-
-  '@splidejs/vue-splide@0.6.12':
-    resolution: {integrity: sha512-eQb8pnGMN8Tr0FVaQo1PUMZlMHl8fSqHNXPTx79eeE2dkZqbsvq6jRzXoT9ZF7hFkxdOEmB6qYNp93SUwV684g==}
 
   '@types/d3-array@3.2.1':
     resolution: {integrity: sha512-Y2Jn2idRrLzUfAKV2LyRImR+y4oa2AntrgID95SHJxuMUrkNXmanDSed71sRNZysveJVt1hLLemQZIady0FpEg==}
@@ -2370,6 +2358,7 @@ snapshots:
       '@parcel/watcher-win32-arm64': 2.4.1
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
+    optional: true
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -2452,12 +2441,6 @@ snapshots:
       '@types/hast': 3.0.4
 
   '@shikijs/vscode-textmate@9.3.0': {}
-
-  '@splidejs/splide@4.1.4': {}
-
-  '@splidejs/vue-splide@0.6.12':
-    dependencies:
-      '@splidejs/splide': 4.1.4
 
   '@types/d3-array@3.2.1': {}
 
@@ -2865,6 +2848,7 @@ snapshots:
   chokidar@4.0.1:
     dependencies:
       readdirp: 4.0.2
+    optional: true
 
   color-convert@1.9.3:
     dependencies:
@@ -3064,7 +3048,8 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  detect-libc@1.0.3: {}
+  detect-libc@1.0.3:
+    optional: true
 
   detect-newline@3.1.0: {}
 
@@ -3218,7 +3203,8 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  immutable@4.3.7: {}
+  immutable@4.3.7:
+    optional: true
 
   internmap@2.0.3: {}
 
@@ -3345,7 +3331,8 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  node-addon-api@7.1.1: {}
+  node-addon-api@7.1.1:
+    optional: true
 
   node-releases@2.0.18: {}
 
@@ -3433,7 +3420,8 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
-  readdirp@4.0.2: {}
+  readdirp@4.0.2:
+    optional: true
 
   regex@4.3.3: {}
 
@@ -3495,6 +3483,7 @@ snapshots:
       chokidar: 4.0.1
       immutable: 4.3.7
       source-map-js: 1.2.1
+    optional: true
 
   search-insights@2.17.2: {}
 
