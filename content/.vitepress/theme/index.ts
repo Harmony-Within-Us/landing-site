@@ -1,17 +1,11 @@
-// https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
-import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import './custom.css'
 
 export default {
-  extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
-  },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  ...DefaultTheme,
+  enhanceApp({ app }) {
+    app.component('Splide', Splide)
+    app.component('SplideSlide', SplideSlide)
   }
-} satisfies Theme
+}
