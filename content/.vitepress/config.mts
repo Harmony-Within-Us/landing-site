@@ -47,7 +47,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://static.harmony-within.us/favicon/favicon-16x16.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://static.harmony-within.us/favicon/apple-touch-icon.png' }],
     ['link', { rel: 'shortcut icon', href: 'https://static.harmony-within.us/favicon/favicon.ico' }],
-    ['meta', { property: 'og:image', content: 'https://static.harmony-within.us/icon/harmony%20within%20us.svg' }],
+    ['meta', { property: 'og:image', content: 'https://static.harmony-within.us/icon/white.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#f8acbc' }],
 
   ],
