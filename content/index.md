@@ -23,6 +23,10 @@ features:
     details: Find resources and support for trans individuals and allies
 ---
 
+::: danger
+UNFINISHED WEBSITE, PLEASE DO NOT USE YET
+:::
+
 <script setup>
 import { ref, onMounted } from 'vue'
 import { format } from 'date-fns'
