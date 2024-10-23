@@ -11,7 +11,17 @@
     "vue": "^3.5.12"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
+    "@types/d3": "^7.4.3",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "autoprefixer": "^10.4.20",
+    "d3": "^7.9.0",
+    "date-fns": "^4.1.0",
     "ical": "^0.8.0",
-    "markdown-yaml-metadata-parser": "^3.0.0"
+    "ical-generator": "^8.0.1",
+    "markdown-yaml-metadata-parser": "^3.0.0",
+    "postcss": "^8.4.47",
+    "sass": "^1.80.3",
+    "tailwindcss": "^3.4.14"
   }
 }

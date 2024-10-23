@@ -24,6 +24,8 @@ const postsByLang = (locale?: string) =>
   .filter((item) => item !== undefined)
   .map(({text, link}) => ({text, link}));
 
+  console.log(postsByLang());
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Harmony Within Us",
@@ -48,12 +50,15 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://static.harmony-within.us/favicon/apple-touch-icon.png' }],
     ['link', { rel: 'shortcut icon', href: 'https://static.harmony-within.us/favicon/favicon.ico' }],
     ['meta', { name: 'msapplication-TileColor', content: '#f8acbc' }],
+
   ],
 
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about/' },
+      { text: 'Archive', link: '/archive' },
+      { text: 'Resources', link: '/resources/' },
       { text: 'Contact', link: '/contact/' },
     ],
     
