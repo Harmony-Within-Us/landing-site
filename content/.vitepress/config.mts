@@ -29,6 +29,7 @@ export default defineConfig({
   title: "Harmony Within Us",
   description: "Fostering serenity and connection, a dedicated space for transgender individuals navigating life.",
   cleanUrls: true,
+  appearance: 'force-dark',
   locales: {
     root: {
       label: 'English',
@@ -37,7 +38,11 @@ export default defineConfig({
     nl: {
       label: 'Nederlands',
       lang: 'nl'
-    }
+    },
+    de: {
+      label: 'Deutsch',
+      lang: 'de'
+    },
   },
   // https://static.harmony-within.us/favicon/* has all the favicons
   head: [
